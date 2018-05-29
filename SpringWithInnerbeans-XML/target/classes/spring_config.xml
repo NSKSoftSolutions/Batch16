@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean name="brand" class="com.snycon.bean.Brand" >
+<property name="brand_name" value="volkSwagen"></property>
+<property name="staring_price" value="5000"></property>
+<property name="highest_price" value="10000"></property>
+<property name="manifaturedby" value="ZERMAN"></property>
+</bean>
+
+
+<bean name="cat" class="com.snycon.bean.Category" autowire="byType">
+<property name="cat_name" value="CARS"></property>
+ </bean>
+
+
+
+</beans>
