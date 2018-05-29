@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean name="org" class="com.snycon.bean.Organization">
+		<property name="orgname" value="Snycon Soft Solutions"></property>
+		<property name="orgaddress" value="Sigma Soft Tech ,Gamma tower, 3rd floor"></property>
+		<property name="orgemail" value="snycon@webmail.com"></property>
+		<property name="city" value="Bangalore"></property>
+		<property name="state" value="Karnataka"></property>
+		<property name="country" value="INDIA"></property>
+		<property name="phone" value="9876543"></property>
+		<property name="departmentdetails">
+			<set>
+				<value>JAVA</value>
+				<value>Testing</value>
+				<value>Andriod</value>
+				<value>.NET</value>
+			</set>
+		</property>
+	</bean>
+
+<bean name="pro" class="com.snycon.bean.Product">
+
+<constructor-arg name="product_name" value="Haier Refrigirator"></constructor-arg>
+<constructor-arg name="price" value="50000"></constructor-arg>
+
+</bean>
+
+
+
+</beans>
